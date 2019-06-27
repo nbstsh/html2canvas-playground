@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	min-width: 100vw;
+	min-height: 100vh;
+	font-size: 1.6rem;
+}
+
+section {
+	padding: 5rem 0;
+	max-width: 100rem;
+	margin: 0 auto;
+}
+
+h1 {
+	margin-bottom: 5rem;
+}
+
+section > *:not(h1) {
+	margin-bottom: 3rem;
+}
+
+button {
+	padding: 1.5rem 2rem;
+	font-size: 3rem;
+	border: 1px solid orange;
+	color: orange;
+	cursor: pointer;
+	transition: all 0.2s;
+	outline: none;
+}
+
+button:hover {
+	background-color: orange;
+	color: #fff;
+}
+button:active {
+	background-color: #fff;
+	color: orange;
+}
+
+.canvas-box {
+	width: 100%;
+	min-height: 10rem;
+	border: 1px solid #000;
+	overflow: scroll;
+}
+
+canvas {
+	max-height: 100%;
+	max-width: 100%;
+}
